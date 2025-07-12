@@ -1,0 +1,7 @@
+local keys = {
+    ["69420"] = true
+}
+
+return function(input)
+    return keys[input] == true
+end
