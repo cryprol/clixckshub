@@ -1,1 +1,11 @@
+local encoded = {
+    tonumber("8" .. 9*10^8 + 1*10^7 + 5*10^6 + 7*10^5 + 5*10^4 + 1*10^3 + 3*10^2 + 7*10 + 8),
+    tonumber("8" .. 9*10^8 + 2*10^7 + 1*10^6 + 8*10^5 + 8*10^4 + 2*10^3 + 1*10^2 + 4*10 + 6)
+}
 
+local whitelist = {}
+for _, id in ipairs(encoded) do
+    whitelist[id] = true
+end
+
+return whitelist
