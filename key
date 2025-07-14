@@ -1,7 +1,7 @@
-local keys = {
-    ["69420"] = true
-}
+local a = ("\x36\x39\x34\x32\x30"):gsub(".", function(c) return string.char(c:byte()) end)
+local b = {}
+b[a] = true
 
-return function(input)
-    return keys[input] == true
+return function(c)
+    return b[c] == true
 end
