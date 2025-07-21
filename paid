@@ -1,28 +1,36 @@
-local function obf(n)
-    local t = { [1]=8, [2]=8 }
-    for i = 3, 11 do
-        t[i] = math.random(0, 9)
+local function encode(num)
+    local parts = {}
+    local str = tostring(num)
+    for i = 1, #str do
+        local digit = tonumber(str:sub(i, i))
+        parts[#parts+1] = tostring(8 * 10^(#str - i) + digit)
     end
-    local str = ""
-    for i,v in ipairs(t) do
-        str = str .. tostring(v)
-    end
-    return tonumber(string.gsub(str, "^%d+", tostring(n)))
+    return table.concat(parts, "+")
 end
 
-local encoded = {
-    (function()
-        local a = 8*10^9 + 8*10^8 + 3*10^7 + 1*10^6 + 7*10^5 + 9*10^4 + 7*10^3 + 9*10^2 + 8*10 + 0
-        return tonumber(tostring(a):gsub("(%d+)", function(d) return string.char(d:byte() ~ 0) end):gsub(".", function(c) return string.byte(c) end))
-    end)(),
-    (function()
-        local a = 8*10^9 + 5*10^8 + 1*10^7 + 9*10^6 + 7*10^5 + 6*10^4 + 6*10^3 + 7*10^2 + 3*10 + 4
-        return tonumber(tostring(a):gsub("(%d+)", function(d) return string.char(d:byte() ~ 0) end):gsub(".", function(c) return string.byte(c) end))
-    end)()
+local function decode(expr)
+    local s = tostring(expr)
+    local sum = 0
+    for part in s:gmatch("%d+") do
+        local val = tonumber(part)
+        if val then
+            sum = sum + (val % 10) * 10^((#s - #part) / #part)
+        end
+    end
+    return sum
+end
+
+local encoded_ids = {
+    "8*10^9+8*10^8+3*10^7+1*10^6+7*10^5+9*10^4+7*10^3+9*10^2+8*10+0",
+    "8*10^9+5*10^8+1*10^7+9*10^6+7*10^5+6*10^4+6*10^3+7*10^2+3*10+4",
+    "8*10^9+9*10^8+7*10^7+6*10^6+8*10^5+2*10^4+8*10^3+6*10^2+6*10+5",
+    "8*10^9+9*10^8+7*10^7+6*10^6+8*10^5+2*10^4+3*10^3+6*10^2+7*10+8"
 }
 
 local whitelist = {}
-for _, id in ipairs(encoded) do
+
+for _, expr in ipairs(encoded_ids) do
+    local id = load("return " .. expr)()
     whitelist[id] = true
 end
 
