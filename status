@@ -1,0 +1,8 @@
+return {
+    MNC = {
+        ScriptStatus = "Testing"
+    },
+    Default = {
+        ScriptStatus = "Updated"
+    }
+}
