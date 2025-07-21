@@ -3,7 +3,7 @@ return {
         ScriptStatus = "Testing"
     },
     MNCPaid = {
-        ScriptStatus = "Online"
+        ScriptStatus = "Testing"
     },
     Default = {
         ScriptStatus = "Updated"
