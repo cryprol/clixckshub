@@ -1,6 +1,6 @@
 return {
     MNC = {
-        ScriptStatus = "Testing"
+        ScriptStatus = "Online"
     },
     MNCPaid = {
         ScriptStatus = "Testing"
