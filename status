@@ -1,9 +1,9 @@
 return {
     MNC = {
-        ScriptStatus = "Updated"
+        ScriptStatus = "Testing"
     },
     MNCPaid = {
-        ScriptStatus = "Updated"
+        ScriptStatus = "Testing"
     },
     Default = {
         ScriptStatus = "Updated"
