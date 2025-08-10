@@ -1,4 +1,4 @@
 return {
-    "Midnight Chasers",
-    "test"
+    ["Midnight Chasers"] = {13822562292, 13904875175},
+    ["Test"] = {0}
 }
