@@ -5,6 +5,12 @@ return {
     MNCPaid = {
         ScriptStatus = "Updated"
     },
+    BronxPaid = {
+        ScriptStatus = "Updated"
+    },
+    Rocitizens = {
+        ScriptStatus = "Updated"
+    },
     Default = {
         ScriptStatus = "Updated"
     }
