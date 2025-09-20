@@ -1,4 +1,4 @@
-local a = ("\x36\x39\x34\x32\x30"):gsub(".", function(c) return string.char(c:byte()) end)
+local a = ("\x61\x62\x63"):gsub(".", function(c) return string.char(c:byte()) end)
 local b = {}
 b[a] = true
 
