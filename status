@@ -1,12 +1,12 @@
 return {
     MNC = {
-        ScriptStatus = "Testing"
+        ScriptStatus = "Updated"
     },
     MNCPaid = {
         ScriptStatus = "Testing"
     },
     BronxPaid = {
-        ScriptStatus = "Updated"
+        ScriptStatus = "Testing"
     },
     Rocitizens = {
         ScriptStatus = "WIP"
