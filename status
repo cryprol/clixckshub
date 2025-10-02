@@ -1,15 +1,15 @@
 return {
     MNC = {
-        ScriptStatus = "Updated"
+        ScriptStatus = "Testing"
     },
     MNCPaid = {
-        ScriptStatus = "Updated"
+        ScriptStatus = "Testing"
     },
     BronxPaid = {
         ScriptStatus = "Updated"
     },
     Rocitizens = {
-        ScriptStatus = "Updated"
+        ScriptStatus = "WIP"
     },
     Default = {
         ScriptStatus = "Updated"
