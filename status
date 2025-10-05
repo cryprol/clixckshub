@@ -9,7 +9,7 @@ return {
         ScriptStatus = "Buggy"
     },
     Rocitizens = {
-        ScriptStatus = "WIP"
+        ScriptStatus = "Updated"
     },
     Default = {
         ScriptStatus = "Updated"
