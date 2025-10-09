@@ -1,0 +1,17 @@
+return {
+    MNC = {
+        ScriptStatus = "Testing"
+    },
+    MNCPaid = {
+        ScriptStatus = "Testing"
+    },
+    BronxPaid = {
+        ScriptStatus = "Buggy"
+    },
+    Rocitizens = {
+        ScriptStatus = "Updated"
+    },
+    Default = {
+        ScriptStatus = "Updated"
+    }
+}
