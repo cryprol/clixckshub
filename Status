@@ -16,5 +16,8 @@ return {
     },
     Default = {
         ScriptStatus = "Updated"
+    },
+    Premium = {
+        ScriptStatus = "Updated"
     }
 }
