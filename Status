@@ -1,9 +1,12 @@
 return {
     MNC = {
-        ScriptStatus = "Testing"
+        ScriptStatus = "Updated"
     },
     MNCPaid = {
-        ScriptStatus = "Testing"
+        ScriptStatus = "Updated"
+    },
+    MNCEvent = {
+        ScriptStatus = "Updated"
     },
     Rocitizens = {
         ScriptStatus = "Updated"
