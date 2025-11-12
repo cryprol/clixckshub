@@ -5,14 +5,17 @@ return {
     MNCPaid = {
         ScriptStatus = "Updated"
     },
-    MNCEvent = {
-        ScriptStatus = "Updated"
-    },
     Rocitizens = {
         ScriptStatus = "Updated"
     },
     RocitizensPaid = {
         ScriptStatus = "Updated"
+    },
+    MRT = {
+        ScriptStatus = "WIP"
+    },
+    MRTPaid = {
+        ScriptStatus = "WIP"
     },
     BronxPaid = {
         ScriptStatus = "Buggy"
