@@ -1,9 +1,9 @@
 return {
     MNC = {
-        ScriptStatus = "Updated"
+        ScriptStatus = "Updating"
     },
     MNCPaid = {
-        ScriptStatus = "Updated"
+        ScriptStatus = "Updating"
     },
     Rocitizens = {
         ScriptStatus = "Updated"
@@ -12,10 +12,10 @@ return {
         ScriptStatus = "Updated"
     },
     MRT = {
-        ScriptStatus = "WIP"
+        ScriptStatus = "In Development"
     },
     MRTPaid = {
-        ScriptStatus = "WIP"
+        ScriptStatus = "In Development"
     },
     BronxPaid = {
         ScriptStatus = "Buggy"
