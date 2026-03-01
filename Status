@@ -1,4 +1,7 @@
 return {
+    BizarreLineagePaid = {
+        ScriptStatus = "WIP"
+    },
     MNC = {
         ScriptStatus = "Updated"
     },
@@ -12,10 +15,10 @@ return {
         ScriptStatus = "Updated"
     },
     MRT = {
-        ScriptStatus = "In Development"
+        ScriptStatus = "WIP"
     },
     MRTPaid = {
-        ScriptStatus = "In Development"
+        ScriptStatus = "WIP"
     },
     BronxPaid = {
         ScriptStatus = "Buggy"
